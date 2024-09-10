@@ -1,6 +1,6 @@
 # Define the virtual environment directory and python version
 VENV_DIR=venv
-PYTHON=python3
+PYTHON=python
 
 # Default command to run the scraper script
 run: venv
