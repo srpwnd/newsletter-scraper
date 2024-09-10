@@ -9,8 +9,6 @@ This project is a web scraper designed to extract newsletter data from the [Bizz
 - Includes a Makefile for easier management of tasks such as running the scraper, installing dependencies, running tests, linting, and formatting.
 - Dockerized for easy deployment and isolated execution.
 
----
-
 ## Table of Contents
 
 1. [Installation](#installation)
@@ -18,8 +16,6 @@ This project is a web scraper designed to extract newsletter data from the [Bizz
 3. [Makefile Commands](#makefile-commands)
 4. [Testing](#testing)
 5. [Docker Setup](#docker-setup)
-
----
 
 ## Installation
 
@@ -43,8 +39,6 @@ This project is a web scraper designed to extract newsletter data from the [Bizz
     make install
     ```
 
----
-
 ## Usage
 
 To run the scraper, use the following command:
@@ -60,8 +54,6 @@ You can also clean up data files and virtual environments using:
 ```bash
 make clean
 ```
-
----
 
 ## Makefile Commands
 
@@ -80,8 +72,6 @@ The Makefile provides a series of predefined commands to help with project manag
 | `make clean-data` | Cleans only the data files (CSV, Parquet) stored in `_storage` directories. |
 | `make clean-venv` | Removes the virtual environment folder.                                   |
 
----
-
 ## Testing
 
 Unit and integration tests are located in the `tests/` directory. To run all tests, use:
@@ -91,8 +81,6 @@ make test
 ```
 
 This will automatically discover and run all the test cases using `unittest`.
-
----
 
 ## Docker Setup
 
@@ -118,8 +106,6 @@ The project is Dockerized to simplify running in isolated environments. You can 
     ```
 
 This will build the image (if necessary) and run the scraper automatically inside a container.
-
----
 
 ## Storage Location
 
