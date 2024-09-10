@@ -18,8 +18,6 @@ This project is a web scraper designed to extract newsletter data from the [Bizz
 3. [Makefile Commands](#makefile-commands)
 4. [Testing](#testing)
 5. [Docker Setup](#docker-setup)
-6. [Working with DLT](#working-with-dlt)
-7. [Newsletter Website](#newsletter-website)
 
 ---
 
