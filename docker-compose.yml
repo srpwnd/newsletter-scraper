@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  scraper:
+    build: .
+    container_name: newsletter_scraper
+    volumes:
+      - ./_storage_docker:/app/_storage

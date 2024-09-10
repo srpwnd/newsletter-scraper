@@ -4,7 +4,7 @@ PYTHON=python
 
 # Default command to run the scraper script
 run: venv
-	@$(VENV_DIR)/bin/$(PYTHON) newsletter_scraper.py
+	@$(VENV_DIR)/bin/$(PYTHON) scraping_pipeline.py
 
 # Create the virtual environment
 venv:
@@ -24,9 +24,18 @@ freeze:
 test:
 	@$(VENV_DIR)/bin/python -m unittest discover -s tests
 
+lint:
+	@$(VENV_DIR)/bin/python -m ruff check --fix
+
+format:
+	@$(VENV_DIR)/bin/python -m ruff format
+
 # Clean up generated files
 clean:
-	rm -rf __pycache__ *.pyc $(VENV_DIR) *.csv *.parquet
+	rm -rf __pycache__ *.pyc $(VENV_DIR) *.csv *.parquet _storage _storage_docker
+
+clean-data:
+	rm -rf _storage _storage_docker
 
 # Remove virtual environment
 clean-venv:

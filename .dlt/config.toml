@@ -1,0 +1,10 @@
+[destination.filesystem]
+kwargs = '{"auto_mkdir": true}'
+bucket_url = '_storage/'
+
+[sources.scraping]
+start_urls = ["https://www.bizztreat.com/newsletter-blog"]
+start_urls_file = ""
+
+[normalize.data_writer]
+disable_compression=true

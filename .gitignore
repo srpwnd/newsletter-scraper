@@ -382,3 +382,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+.ruff_cache/
+_storage/
+_storage_docker/
